@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#10243b">
+  <title>大洋物流业务原型</title>
+  <style>
+    :root{color-scheme:light;--navy:#10243b;--blue:#287ac6;--ink:#20344a;--muted:#708196;--line:#e3eaf1;--surface:#fff;--canvas:#f3f6fa}
+    *{box-sizing:border-box}
+    body{margin:0;background:var(--canvas);font:15px/1.55 "Microsoft YaHei",Arial,sans-serif;color:var(--ink)}
+    .topbar{height:68px;background:var(--navy);color:#fff;display:flex;align-items:center;padding:0 max(24px,calc((100vw - 1180px)/2));gap:13px}
+    .mark{width:34px;height:34px;border-radius:9px;background:#3989ed;display:grid;place-items:center;font-weight:700;font-size:17px}
+    .brand{font-weight:650;letter-spacing:.3px}
+    main{max-width:1180px;margin:0 auto;padding:54px 24px 72px}
+    .eyebrow{color:var(--blue);font-size:12px;font-weight:700;letter-spacing:1.4px;text-transform:uppercase}
+    h1{font-size:32px;line-height:1.25;margin:9px 0 10px;color:#172b40}
+    .intro{color:var(--muted);margin:0;max-width:690px}
+    .section-head{display:flex;align-items:end;justify-content:space-between;margin:38px 0 14px}
+    h2{font-size:17px;margin:0;color:#23384e}
+    .count{font-size:12px;color:#8795a5}
+    .grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px}
+    .card{background:var(--surface);border:1px solid var(--line);border-radius:9px;padding:20px 21px;min-height:142px;display:flex;flex-direction:column;box-shadow:0 3px 10px #19345308;transition:transform .15s,box-shadow .15s,border-color .15s}
+    .card:hover{transform:translateY(-2px);border-color:#b9d4ef;box-shadow:0 8px 22px #19345312}
+    .card-top{display:flex;align-items:center;gap:11px}
+    .icon{width:35px;height:35px;border-radius:8px;background:#eaf3fc;color:#2678c5;display:grid;place-items:center;font-size:16px;font-weight:700;flex:none}
+    h3{font-size:16px;margin:0;font-weight:650}
+    .card p{font-size:13px;color:var(--muted);margin:12px 0 15px}
+    .open{margin-top:auto;display:inline-flex;align-items:center;gap:7px;color:var(--blue);font-size:13px;font-weight:600;text-decoration:none}
+    .open:focus-visible{outline:3px solid #a8d0fa;outline-offset:3px;border-radius:3px}
+    .arrow{font-size:17px;line-height:1}
+    .note{margin-top:22px;padding:12px 14px;border:1px solid #e4ebf2;border-radius:7px;color:#708196;background:#f8fafc;font-size:12px}
+    footer{margin-top:34px;border-top:1px solid var(--line);padding-top:15px;color:#93a0ae;font-size:12px}
+    @media(max-width:650px){.topbar{height:58px;padding:0 18px}main{padding:36px 18px 54px}h1{font-size:27px}.grid{grid-template-columns:1fr}.card{min-height:130px}.section-head{margin-top:30px}}
+  </style>
+</head>
+<body>
+  <header class="topbar"><span class="mark" aria-hidden="true">N</span><span class="brand">大洋物流 · 业务原型</span></header>
+  <main>
+    <div class="eyebrow">Prototype workspace</div>
+    <h1>物流业务原型</h1>
+    <p class="intro">选择一个页面开始体验。页面中的菜单、表单、弹窗和列表交互可直接操作。</p>
+    <div class="section-head"><h2>原型页面</h2><span class="count">共 5 个页面</span></div>
+    <section class="grid" aria-label="原型页面列表">
+      <article class="card"><div class="card-top"><span class="icon" aria-hidden="true">01</span><h3>订单详情</h3></div><p>查看和编辑订单基础信息、服务、订舱箱量及货物明细。</p><a class="open" href="订单详情.html">打开原型 <span class="arrow" aria-hidden="true">→</span></a></article>
+      <article class="card"><div class="card-top"><span class="icon" aria-hidden="true">02</span><h3>新增订单</h3></div><p>体验新建订单表单、必填校验及进入订单详情的流程。</p><a class="open" href="新增订单.html">打开原型 <span class="arrow" aria-hidden="true">→</span></a></article>
+      <article class="card"><div class="card-top"><span class="icon" aria-hidden="true">03</span><h3>操作单详情</h3></div><p>查看操作单信息、内部委托入口和通用订单参考视图。</p><a class="open" href="操作单详情.html">打开原型 <span class="arrow" aria-hidden="true">→</span></a></article>
+      <article class="card"><div class="card-top"><span class="icon" aria-hidden="true">04</span><h3>纯端服务业务</h3></div><p>切换分配操作、端服务操作单列表及操作单详情。</p><a class="open" href="纯端服务业务.html#allocation">打开原型 <span class="arrow" aria-hidden="true">→</span></a></article>
+      <article class="card"><div class="card-top"><span class="icon" aria-hidden="true">05</span><h3>内部委托统一申请</h3></div><p>体验不同委托类型、申请服务和动态字段表单。</p><a class="open" href="内部委托统一申请.html">打开原型 <span class="arrow" aria-hidden="true">→</span></a></article>
+    </section>
+    <div class="note">原型数据仅用于页面交互演示。通用订单页面使用的参考截图随站点资源一同发布。</div>
+    <footer>大洋物流业务原型 · 交互演示</footer>
+  </main>
+</body>
+</html>
